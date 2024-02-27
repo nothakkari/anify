@@ -1,0 +1,18 @@
+.cycle {
+    position: relative;
+}
+
+.cycle::after {
+    content: '';
+    top: 45%;
+    left: -10px;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #717998;
+}
+
+.cycle:first-child::after {
+    display: none;
+}
